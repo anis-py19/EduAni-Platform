@@ -1,0 +1,185 @@
+@import "tailwindcss";
+
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #0f0f1a;
+  color: #e2e8f0;
+}
+
+.font-code {
+  font-family: 'Fira Code', monospace;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #1a1a2e;
+}
+::-webkit-scrollbar-thumb {
+  background: #6c63ff;
+  border-radius: 3px;
+}
+
+/* Gradient text */
+.gradient-text {
+  background: linear-gradient(135deg, #6c63ff 0%, #48d1cc 50%, #f093fb 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.gradient-text-blue {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Glow effects */
+.glow-purple {
+  box-shadow: 0 0 30px rgba(108, 99, 255, 0.3);
+}
+
+.glow-teal {
+  box-shadow: 0 0 30px rgba(72, 209, 204, 0.3);
+}
+
+/* Card hover */
+.card-hover {
+  transition: all 0.3s ease;
+}
+.card-hover:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 60px rgba(108, 99, 255, 0.25);
+}
+
+/* Animated gradient background */
+.hero-bg {
+  background: radial-gradient(ellipse at top left, rgba(108, 99, 255, 0.15) 0%, transparent 50%),
+              radial-gradient(ellipse at bottom right, rgba(72, 209, 204, 0.1) 0%, transparent 50%),
+              #0f0f1a;
+}
+
+/* Grid pattern */
+.grid-pattern {
+  background-image: 
+    linear-gradient(rgba(108, 99, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(108, 99, 255, 0.05) 1px, transparent 1px);
+  background-size: 50px 50px;
+}
+
+/* Badge */
+.badge-purple {
+  background: linear-gradient(135deg, rgba(108, 99, 255, 0.2), rgba(108, 99, 255, 0.05));
+  border: 1px solid rgba(108, 99, 255, 0.4);
+  color: #a78bfa;
+}
+
+.badge-teal {
+  background: linear-gradient(135deg, rgba(72, 209, 204, 0.2), rgba(72, 209, 204, 0.05));
+  border: 1px solid rgba(72, 209, 204, 0.4);
+  color: #5eead4;
+}
+
+.badge-pink {
+  background: linear-gradient(135deg, rgba(240, 147, 251, 0.2), rgba(240, 147, 251, 0.05));
+  border: 1px solid rgba(240, 147, 251, 0.4);
+  color: #f0abfc;
+}
+
+/* Button primary */
+.btn-primary {
+  background: linear-gradient(135deg, #6c63ff, #a78bfa);
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 20px rgba(108, 99, 255, 0.4);
+}
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(108, 99, 255, 0.6);
+}
+
+.btn-secondary {
+  background: transparent;
+  border: 1px solid rgba(108, 99, 255, 0.5);
+  transition: all 0.3s ease;
+}
+.btn-secondary:hover {
+  background: rgba(108, 99, 255, 0.1);
+  border-color: rgba(108, 99, 255, 0.8);
+  transform: translateY(-2px);
+}
+
+/* Timeline */
+.timeline-line {
+  background: linear-gradient(to bottom, #6c63ff, #48d1cc, #f093fb);
+}
+
+/* Glass card */
+.glass-card {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+/* Step number */
+.step-number {
+  background: linear-gradient(135deg, #6c63ff, #48d1cc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Animate fade in */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 20px rgba(108, 99, 255, 0.3); }
+  50% { box-shadow: 0 0 40px rgba(108, 99, 255, 0.6); }
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+/* Road map step colors */
+.step-html { border-color: #f97316; }
+.step-css { border-color: #3b82f6; }
+.step-js { border-color: #eab308; }
+.step-react { border-color: #06b6d4; }
+.step-node { border-color: #22c55e; }
+.step-db { border-color: #a855f7; }
+
+.bg-html { background: rgba(249, 115, 22, 0.1); }
+.bg-css { background: rgba(59, 130, 246, 0.1); }
+.bg-js { background: rgba(234, 179, 8, 0.1); }
+.bg-react { background: rgba(6, 182, 212, 0.1); }
+.bg-node { background: rgba(34, 197, 94, 0.1); }
+.bg-db { background: rgba(168, 85, 247, 0.1); }
