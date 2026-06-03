@@ -88,7 +88,7 @@ export default function Footer({ setCurrentPage }: FooterProps) {
         {/* Bottom Bar */}
         <div className="mt-12 pt-8 border-t border-white/5 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-slate-500 text-sm">
-            © 2025 <span className="text-purple-400 font-medium">EduAnis</span> — All rights reserved
+            © 2026 <span className="text-purple-400 font-medium">EduAnis</span> — All rights reserved
           </p>
           <div className="flex items-center gap-2 text-slate-500 text-sm">
             <span>Made with</span>
