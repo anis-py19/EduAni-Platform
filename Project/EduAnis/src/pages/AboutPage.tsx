@@ -117,7 +117,7 @@ export default function AboutPage({ setCurrentPage }: AboutPageProps) {
         </div>
 
         {/* Story Card */}
-        <div className="glass-card rounded-3xl p-8 md:p-12 border border-purple-500/20 bg-gradient-to-br from-purple-500/10 to-transparent mb-16">
+        <div className="glass-card rounded-3xl p-8 md:p-12 border border-purple-500/20 bg-linear-to-br from-purple-500/10 to-transparent mb-16">
           <div className="flex items-start gap-4 mb-6">
             <div className="text-5xl">💡</div>
             <div>
@@ -171,7 +171,7 @@ export default function AboutPage({ setCurrentPage }: AboutPageProps) {
             {objectives.map((obj, index) => (
               <div
                 key={index}
-                className={`glass-card rounded-2xl p-6 border card-hover bg-gradient-to-br ${obj.color} ${obj.border}`}
+                className={`glass-card rounded-2xl p-6 border card-hover bg-linear-to-br ${obj.color} ${obj.border}`}
               >
                 <div className="flex items-center gap-3 mb-4">
                   <span className="text-3xl">{obj.icon}</span>
@@ -238,7 +238,7 @@ export default function AboutPage({ setCurrentPage }: AboutPageProps) {
         </div>
 
         {/* CTA */}
-        <div className="text-center glass-card rounded-3xl p-10 border border-teal-500/20 bg-gradient-to-br from-teal-500/10 to-transparent">
+        <div className="text-center glass-card rounded-3xl p-10 border border-teal-500/20 bg-linear-to-br from-teal-500/10 to-transparent">
           <div className="text-5xl mb-4">🎓</div>
           <h2 className="text-2xl font-black text-white mb-3">
             Ready to Start?

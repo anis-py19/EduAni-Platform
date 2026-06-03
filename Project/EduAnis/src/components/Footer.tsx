@@ -4,19 +4,19 @@ interface FooterProps {
 
 export default function Footer({ setCurrentPage }: FooterProps) {
   const navigationLinks = [
-    { id: 'home', label: 'Home' },
-    { id: 'about', label: 'About' },
-    { id: 'roadmap', label: 'Roadmap' },
-    { id: 'sources', label: 'Resources' },
+    { id: "home", label: "Home" },
+    { id: "about", label: "About" },
+    { id: "roadmap", label: "Roadmap" },
+    { id: "sources", label: "Resources" },
   ];
 
   const learningPath = [
-    'HTML – Basics',
-    'CSS – Styling',
-    'JavaScript – Programming',
-    'React – Interfaces',
-    'Node.js – Backend',
-    'Databases',
+    "HTML – Basics",
+    "CSS – Styling",
+    "JavaScript – Programming",
+    "React – Interfaces",
+    "Node.js – Backend",
+    "Databases",
   ];
 
   return (
@@ -32,7 +32,8 @@ export default function Footer({ setCurrentPage }: FooterProps) {
               <span className="text-xl font-bold gradient-text">EduAnis</span>
             </div>
             <p className="text-slate-400 text-sm leading-relaxed mb-6">
-              A comprehensive learning platform dedicated to teaching programming and web development from zero to professional level.
+              A comprehensive learning platform dedicated to teaching
+              programming and web development from zero to professional level.
             </p>
             <div className="flex items-center gap-3">
               <span className="badge-purple px-3 py-1 rounded-full text-xs font-medium">
@@ -73,7 +74,7 @@ export default function Footer({ setCurrentPage }: FooterProps) {
               {learningPath.map((item, index) => (
                 <li key={index}>
                   <button
-                    onClick={() => setCurrentPage('roadmap')}
+                    onClick={() => setCurrentPage("roadmap")}
                     className="text-slate-400 hover:text-teal-400 transition-colors text-sm flex items-center gap-2 group"
                   >
                     <span className="w-1 h-1 bg-teal-500 rounded-full opacity-0 group-hover:opacity-100 transition-opacity" />
@@ -88,7 +89,8 @@ export default function Footer({ setCurrentPage }: FooterProps) {
         {/* Bottom Bar */}
         <div className="mt-12 pt-8 border-t border-white/5 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-slate-500 text-sm">
-            © 2026 <span className="text-purple-400 font-medium">EduAnis</span> — All rights reserved
+            © 2026 <span className="text-purple-400 font-medium">EduAnis</span>{" "}
+            — All rights reserved
           </p>
           <div className="flex items-center gap-2 text-slate-500 text-sm">
             <span>Made with</span>

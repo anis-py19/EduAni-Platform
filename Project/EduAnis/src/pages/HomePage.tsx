@@ -103,9 +103,10 @@ export default function HomePage({ setCurrentPage }: HomePageProps) {
           </h1>
 
           <p className="text-slate-400 text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed animate-fade-in-up">
-            Learn web development step by step from programming basics to creating 
-            complete web applications, with a clear learning plan, trusted Arabic resources, 
-            and a comprehensive Full Stack path that leads you to professionalism.
+            Learn web development step by step from programming basics to
+            creating complete web applications, with a clear learning plan,
+            trusted Arabic resources, and a comprehensive Full Stack path that
+            leads you to professionalism.
           </p>
 
           {/* CTA Buttons */}
@@ -203,8 +204,8 @@ export default function HomePage({ setCurrentPage }: HomePageProps) {
               Simple and Effective Learning Platform
             </h2>
             <p className="text-slate-400 max-w-xl mx-auto">
-              EduAnis is not a paid course or a huge platform — it's your personal 
-              guide to learning programming in Arabic.
+              EduAnis is not a paid course or a huge platform — it's your
+              personal guide to learning programming in Arabic.
             </p>
           </div>
 
@@ -212,7 +213,7 @@ export default function HomePage({ setCurrentPage }: HomePageProps) {
             {features.map((feature, index) => (
               <div
                 key={index}
-                className={`glass-card rounded-2xl p-6 border card-hover bg-gradient-to-br ${feature.color} ${feature.border}`}
+                className={`glass-card rounded-2xl p-6 border card-hover bg-linear-to-br ${feature.color} ${feature.border}`}
               >
                 <div className="text-4xl mb-4">{feature.icon}</div>
                 <h3 className="text-white font-bold text-lg mb-2">
@@ -238,7 +239,7 @@ export default function HomePage({ setCurrentPage }: HomePageProps) {
               Technologies in the Path
             </h2>
             <p className="text-slate-400 max-w-xl mx-auto">
-              From your first line of HTML to launching real web applications 
+              From your first line of HTML to launching real web applications
               powered by Node.js and databases.
             </p>
           </div>
@@ -271,13 +272,14 @@ export default function HomePage({ setCurrentPage }: HomePageProps) {
       {/* Final CTA Section */}
       <section className="py-20 px-4">
         <div className="max-w-3xl mx-auto text-center">
-          <div className="glass-card rounded-3xl p-12 border border-purple-500/20 bg-gradient-to-br from-purple-500/10 to-teal-500/5 glow-purple">
+          <div className="glass-card rounded-3xl p-12 border border-purple-500/20 bg-linear-to-br from-purple-500/10 to-teal-500/5 glow-purple">
             <div className="text-6xl mb-6 animate-float">🚀</div>
             <h2 className="text-3xl md:text-4xl font-black text-white mb-4">
               Ready to Start Your Journey?
             </h2>
             <p className="text-slate-400 mb-8 text-lg">
-              No prior experience needed. Just follow the roadmap and you'll get there.
+              No prior experience needed. Just follow the roadmap and you'll get
+              there.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button
