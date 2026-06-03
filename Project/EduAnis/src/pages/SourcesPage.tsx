@@ -514,7 +514,7 @@ export default function SourcesPage({ setCurrentPage }: SourcesPageProps) {
               {/* Header */}
               <div className="flex items-center gap-3 mb-4 mt-1">
                 <div
-                  className={`w-10 h-10 rounded-xl ${source.bg} border ${source.border} flex items-center justify-center text-xl flex-shrink-0`}
+                  className={`w-10 h-10 rounded-xl ${source.bg} border ${source.border} flex items-center justify-center text-xl shrink-0`}
                 >
                   {source.emoji}
                 </div>
@@ -588,7 +588,7 @@ export default function SourcesPage({ setCurrentPage }: SourcesPageProps) {
         </div>
 
         {/* Quick Links Banner */}
-        <div className="mt-16 glass-card rounded-3xl p-8 border border-purple-500/20 bg-gradient-to-br from-purple-500/10 to-teal-500/5">
+        <div className="mt-16 glass-card rounded-3xl p-8 border border-purple-500/20 bg-linear-to-br from-purple-500/10 to-teal-500/5">
           <div className="text-center mb-8">
             <h2 className="text-2xl font-black text-white mb-2">
               ⚡ Essential Direct Links
