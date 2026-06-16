@@ -1,3 +1,5 @@
+import VisitorCounter from "../components/VisitorCounter";
+
 interface HomePageProps {
   setCurrentPage: (page: string) => void;
 }
@@ -123,6 +125,11 @@ export default function HomePage({ setCurrentPage }: HomePageProps) {
             >
               📖 Browse Resources
             </button>
+          </div>
+
+          {/* Live Visitor Counter (social proof) */}
+          <div className="mt-8 flex justify-center">
+            <VisitorCounter />
           </div>
 
           {/* Code Snippet Decoration */}
